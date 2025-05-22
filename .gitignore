@@ -1,0 +1,31 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+# *.pdf
+
+# MacOS system files
+.DS_Store
+
+# Editor/IDE files
+.vscode/
+*.swp
+*~
+
+# Build scripts and outputs
+/build/
+
+# Ignore template PDFs
+# templates/*.pdf
+
+# Ignore all files in sections except .tex
+sections/*.aux
+sections/*.log
+sections/*.out
+sections/*.pdf
+sections/*.synctex.gz

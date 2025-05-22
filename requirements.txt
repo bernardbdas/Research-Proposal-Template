@@ -1,0 +1,20 @@
+# LaTeX package requirements for this project
+amsmath
+amssymb
+geometry
+graphicx
+hyperref
+natbib
+biblatex
+xcolor
+fontenc
+inputenc
+setspace
+titlesec
+fancyhdr
+enumitem
+booktabs
+caption
+subcaption
+listings
+url

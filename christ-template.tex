@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{times} % Times New Roman font
+\usepackage{setspace} % Line spacing
+\singlespacing%
+\usepackage{graphicx} % For including images
+\usepackage{amsmath} % For mathematical symbols
+\usepackage{amsfonts} % For mathematical fonts
+\setstretch{1.15} % 1.15 line spacing
+\usepackage[margin=1in]{geometry} % 1-inch margins
+\usepackage[style=ieee]{biblatex} % IEEE referencing style
+% \usepackage[style=numeric]{biblatex} % Numeric referencing style (compatible)
+% \usepackage{natbib} % For bibliography management
+\addbibresource{references.bib} % Your bibliography file
+\usepackage{subfiles} % For section subfiles
+
+% Page numbering starts from abstract
+\pagestyle{plain}
+\let\oldthepage\thepage%
+\renewcommand{\thepage}{\roman{page}}
+
+\begin{document}
+
+% Title Page (Page i - Roman numeral)
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\LARGE\textbf{Title of the Proposal}\par}
+    \vspace{1cm}
+    {\Large PhD Research Proposal\par}
+    \vspace{2cm}
+    
+    Submitted by \\
+    \textbf{Name of the Candidate} \\
+    Application Number: [Your Number] \\
+    Discipline: Data Science \\
+    Sub-discipline: [Your Sub-discipline] \\
+    \vspace{1cm}
+    
+    In support of PhD application to \\
+    CHRIST (Deemed to be University) \\
+    December 2023 Admissions \\
+    \vspace{2cm}
+    
+    \textbf{Month and Year} \\
+    \vfill
+    \raggedright%
+    \textbf{Author Note}
+
+    [Indicate relevant professional/academic expertise, conflicts of interest, sponsors, or previous publications]
+\end{titlepage}
+
+% Abstract (Page ii)
+\newpage
+\subfile{sections/abstract.tex}
+
+% Main Content (Arabic numbering starts from 1)
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Introduction
+\subfile{sections/introduction.tex}
+
+% Literature Survey
+\subfile{sections/literature-survey.tex}
+
+% Research Problem and Objectives
+\subfile{sections/research-problem-objectives.tex}
+
+% Methodology
+\subfile{sections/methodology.tex}
+
+% Expected Outcome
+\subfile{sections/expected-outcome.tex}
+
+% Timeline
+\subfile{sections/timeline.tex}
+
+% Example citation: \cite{smith2020ml}. You can cite others: \cite{brown2018statistics,lee2021deep}.
+
+% References
+\newpage
+\printbibliography[title=References]
+
+\end{document}
