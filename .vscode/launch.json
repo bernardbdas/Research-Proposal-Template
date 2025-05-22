@@ -1,6 +1,7 @@
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
+    // You can change the "type" attribute to adapt this configuration. Personally I have used "pwa-node" for the both root and non-root builds. You can also use "node" or "chrome" for debugging.
     "version": "0.2.0",
     "configurations": [
         {
