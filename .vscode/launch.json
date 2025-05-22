@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build LaTeX Proposal (root)",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "/bin/zsh",
+            "args": [
+                "-c",
+                "sudo -S ./build.sh"
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Build LaTeX (root)"
+        },
+        {
+            "name": "Build LaTeX Proposal (non-root)",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "/bin/zsh",
+            "args": [
+                "-c",
+                "./build.sh sections/research-proposal.tex"
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Build LaTeX (non-root)"
+        }
+    ]
+}

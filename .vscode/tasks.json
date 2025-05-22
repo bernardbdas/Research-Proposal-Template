@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build LaTeX (root)",
+            "type": "shell",
+            "command": "zsh build.sh",
+            "args": [],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build LaTeX (non-root)",
+            "type": "shell",
+            "command": "zsh build.sh sections/research-proposal.tex",
+            "args": [],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
